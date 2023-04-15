@@ -36,6 +36,10 @@ body {
     background: var(--color-bg);
 }
 
+body span {
+    color: var(--color-danger);
+}
+
 body h4 {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 2.8rem;
@@ -145,7 +149,7 @@ nav button {
 }
 
 .nav__menu a:hover {
-    color: var(--color-bg2);
+    color: var(--color-danger);
 }
 
 /*navbar style on scroll*/
@@ -239,6 +243,11 @@ header {
     background: var(--color-primary);
     padding: 0.7rem;
     border-radius: 0.9rem;
+
+}
+
+.category i {
+    color: var(--color-white);
 }
 
 .category h5 {
@@ -292,12 +301,105 @@ header {
     margin-bottom: 1rem;
 }
 
-.course__info p,
-h4 {
+.course__info p {
     margin: 0.5rem 0 0.5rem;
     font-size: 0.9rem;
 }
 
+.courses h4 {
+    font-weight: 800;
+}
+
 .course__info h4 {
     font-size: 2rem;
+}
+
+/*--faq section--*/
+
+.faqs h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.faqs {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background-color: var(--color-bg);
+    cursor: pointer;
+}
+
+.faq i {
+    color: var(--color-danger);
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    margin-top: 1rem;
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+}
+
+/*---testimonial section---*/
+
+.testimonials__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding-top: 2rem;
+}
+
+.avatar {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--color-bg1);
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: var(--color-bg1);
+    padding: 3rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.testimonial__body::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(135deg, var(--color-bg1), var(--color-bg1), var(--color-bg1));
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
 }

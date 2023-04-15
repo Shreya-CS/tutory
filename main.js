@@ -2,3 +2,32 @@
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
 })
+
+//faqs open and close
+
+const faqs = document.querySelectorAll('.faq');
+
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('open');
+
+        //changing the icon
+        const icon = faq.querySelector('.faq__icon i');
+        if (icon.className === 'uil uil-plus') {
+            icon.className = 'uil uil-minus';
+        }
+        else {
+            icon.className = 'uil uil-plus';
+        }
+    })
+})
+
+//sliding window
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
