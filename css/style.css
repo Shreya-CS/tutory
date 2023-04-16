@@ -397,9 +397,72 @@ header {
     display: block;
     width: 3rem;
     height: 3rem;
-    background: linear-gradient(135deg, var(--color-bg1), var(--color-bg1), var(--color-bg1));
+    background: linear-gradient(135deg, transparent, var(--color-bg1), var(--color-bg1), var(--color-bg1));
     position: absolute;
     left: 50%;
     top: -1.5rem;
     transform: rotate(45deg);
+}
+
+.testimonials__container h5 {
+    color: var(--color-danger);
+}
+
+/*---foooter section----*/
+footer {
+    background: var(--color-bg1);
+    padding-top: 3rem;
+    font-size: 0.9rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    text-align: center;
+}
+
+footer ul li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+.footer__container h5 {
+    padding-top: 1.4rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-danger);
+}
+
+.footer__container>div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer__1 p {
+    margin-top: 1.2rem 0 2rem;
+    font-size: 1rem;
+}
+
+.footer__4 p {
+    margin-bottom: 1rem;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding-left: 80px;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-bg2);
+    color: var(--color-danger);
 }
