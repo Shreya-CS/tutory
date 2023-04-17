@@ -136,7 +136,6 @@ nav {
 nav button {
     display: none;
 }
-
 .nav__menu {
     display: flex;
     align-items: center;
@@ -529,7 +528,7 @@ footer ul li:hover {
     }
 
     .nav__menu li a {
-        background-color: var(--color-bg2);
+        background-color: var(--color-bg);
         place-items: center;
         box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
         width: 100%;
