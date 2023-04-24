@@ -441,6 +441,11 @@ footer ul li:hover {
     text-decoration: underline;
 }
 
+footer .permalinks {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .footer__container h5 {
     padding-top: 1.4rem;
     margin-bottom: 1rem;
