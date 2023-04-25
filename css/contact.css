@@ -45,7 +45,7 @@
 .contact__socials {
     display: flex;
     gap: 0.8rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .contact__socials a {
@@ -64,6 +64,7 @@
 /*--forms--*/
 
 .contact__form {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -84,6 +85,12 @@ textarea {
     width: 100%;
     padding: 1rem;
     background: var(--color-bg);
-    margin-bottom: 1rem;
     color: var(--color-white);
+}
+
+@media screen and (max-width:600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 }
