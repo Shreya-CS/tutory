@@ -88,6 +88,10 @@ textarea {
     color: var(--color-white);
 }
 
+.contact__container {
+    max-width: 100%;
+}
+
 @media screen and (max-width:600px) {
     .contact__container {
         grid-template-columns: 1fr;
